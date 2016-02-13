@@ -25,6 +25,8 @@ body {
 	height: 32px;
 	border-radius: 4px;
 }
+
+
 .button {
 	color: #fff;
 	text-shadow: 0 -1px 1px rgba(0,0,0,.25);
@@ -116,6 +118,10 @@ body {
 			padding-top: 0;
 		}
 
+		#tweet-submit{
+			display: none;
+		}
+
 	/* Compose Tweet */
 	.tweet-compose {
 		width: 100%;
@@ -131,16 +137,25 @@ body {
 			text-align: right;
 		}
 			#tweet-controls div {
-				display: inline-block;
+				/*display: inline-block;*/
 			}
 			#char-count {
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
+				display: none;
 			}
 
 /* TWEET */
 .tweet {
+	clear: both;
+	padding: 9px 12px;
+	border-bottom: 1px solid #e8e8e8;
+	min-height: 60px;
+	border-radius: 6px;
+}
+
+.content1 {
 	clear: both;
 	padding: 9px 12px;
 	border-bottom: 1px solid #e8e8e8;
@@ -154,6 +169,11 @@ body {
 	}
 	.tweet .fullname {
 		font-size: 14px;
+	}
+	.cloneTweet {
+		font-size: 14px;
+		display: inline-block;
+		font-weight: none;
 	}
 	.tweet .username {
 		font-size: 12px;
@@ -180,6 +200,7 @@ body {
 				margin-right: 2px;
 			}
 
+
 	.icon {
 		color: #2FC2EF;
 		background-color: #2FC2EF;
@@ -190,6 +211,7 @@ body {
 		background-repeat: no-repeat;
 		background-image: url(https://abs.twimg.com/a/1379560497/t1/img/twitter_web_sprite_icons.png);
 	}
+
 
 	.action-reply {
 		background-position: 0 -190px;
